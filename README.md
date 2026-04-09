@@ -1,53 +1,107 @@
-The Rise of Indie Games: Steam Market Analysis (2010-2023)
+## The Rise of Indie Games: Steam Market Analysis (2010–2023)
 
-This project analyzes Steam game data to explore how indie games have changed over time in terms of release volume, engagement, pricing, and genre patterns. The analysis focuses on turning exploratory data analysis into a market-focused case study.
+This project analyzes trends in indie game development on Steam, focusing on growth, player engagement, pricing, and genre patterns. The goal is to understand how indie games have evolved and what factors contribute to their success.
 
-Project highlights
-- cleaned and prepared a large Steam games dataset for analysis
-- engineered an is_indie flag from genre data
-- analyzed release trends for indie games from 2010 to 2023
-- compared indie and non-indie games on user scores and pricing
-- used linear regression to measure long-term growth in indie releases
-- filtered out incomplete years and extreme playtime outliers to improve interpretation
-- visualized common indie genres with a word cloud
+---
 
-Business questions
-- How has the number of indie games on Steam changed over time?
-- Do indie games perform competitively on user scores and engagement?
-- Are indie games priced differently from non-indie games?
-- What genres appear most often in indie releases?
+### Project highlights
 
-Tools used
-- Python
-- pandas
-- numpy
-- matplotlib
-- seaborn
-- wordcloud
-- Jupyter Notebook
+* Cleaned and processed ~95,000 game records from Steam
+* Identified indie games using genre-based feature engineering
+* Analyzed release trends, engagement metrics, and pricing strategies
+* Applied linear regression to quantify growth in indie game releases
+* Removed outliers and filtered unreliable time periods for accurate analysis
+* Visualized genre trends using a word cloud
 
-Repository contents
+---
+
+### Business questions
+
+* How has the number of indie games changed over time?
+* Do indie games achieve similar engagement and quality as AAA titles?
+* How does pricing differ between indie and non-indie games?
+* What genres dominate the indie game market?
+
+---
+
+### Tools used
+
+* Python
+* pandas
+* numpy
+* matplotlib
+* seaborn
+* wordcloud
+* Jupyter Notebook
+
+---
+
+### Repository contents
+
+```
 .
 ├── indie_games_analysis.ipynb
 ├── README.md
-└── requirements.txt
+├── requirements.txt
+```
 
-Key findings
-- Indie game releases grew quickly through the mid-2010s, then stabilized.
-- A simple linear trend shows a positive long-run increase in indie releases.
-- Indie games tend to be lower priced than non-indie games.
-- User scores for indie and non-indie titles are broadly comparable.
-- Genre patterns suggest variety and innovation rather than concentration in a single category.
+---
 
-Data notes
+## Dataset
 
 The dataset used in this project is publicly available on Kaggle:
-https://www.kaggle.com/datasets/artermiloff/steam-games-dataset
+
+[https://www.kaggle.com/datasets/artermiloff/steam-games-dataset](https://www.kaggle.com/datasets/artermiloff/steam-games-dataset)
+
 Download the file `games_march2025_full.csv` and place it in the project folder before running the notebook.
 
-- Pre-2010 years were treated cautiously because of sparse observations.
-- 2024 and 2025 were excluded from the main trend discussion because the data was incomplete or unreliable for comparison.
-- Extreme playtime outliers were filtered when analyzing average engagement trends.
+---
 
-Portfolio takeaway
-This project shows data cleaning, exploratory analysis, visualization, basic regression, and business interpretation using a real entertainment-industry dataset.
+## Key findings
+
+### Indie game growth
+
+* Indie game releases increased rapidly from 2010 to around 2017
+* Growth stabilized after 2017
+* Regression analysis shows a positive long-term trend
+
+---
+
+### Player engagement
+
+* Average playtime remains strong over time, with some variability
+* User scores are relatively stable, indicating consistent perceived quality
+
+---
+
+### Value proposition
+
+* Indie games are generally priced lower than non-indie titles
+* Despite lower prices, user scores are comparable
+
+This suggests strong value for players.
+
+---
+
+### Genre trends
+
+* Indie games span a wide variety of genres
+* Common genres include action, adventure, and simulation
+
+---
+
+### Data considerations
+
+* Excluded pre-2010 data due to low sample size
+* Removed extreme playtime outliers (top 1 percent)
+* Excluded 2024–2025 due to incomplete data
+
+---
+
+## Business insights
+
+* Indie games represent a growing and stable segment of the market
+* Lower pricing combined with strong engagement creates a competitive advantage
+* Developers can succeed with niche genres without AAA budgets
+* Platforms benefit from supporting indie creators due to strong user demand
+
